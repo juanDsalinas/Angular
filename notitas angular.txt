@@ -1,0 +1,26 @@
+- comandos para instalacion:
+npm -g @angular/cli@latest
+
+- comandos para verificar que si este instalado:
+ng 
+
+- comandos para crear un proyecto:
+ng new
+
+Nota: En este caso especifico utilizamos css y el angular routing(reference = it's more easy)
+For more information see the Angular documentation :)
+
+decirle que no para lo de google analytics
+
+Comandos Especiles -
+code --r .
+ng g component login(crear un componente llamado login)
+
+Angular tiene un arreglo de rutas el cual facilita el 
+enrutamiento entre las rutas
+
+
+
+
+
+
