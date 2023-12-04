@@ -1,0 +1,9 @@
+<div id="container">
+    <img src="{{pokemon.sprites.front_default}}" alt="" *ngIf="pokemon">
+    <div class="start">
+        <p *ngIf="pokemon?.name">{{"Name: " + pokemon?.name}}</p>
+        <p *ngIf="pokemon?.height">{{"Height: "+pokemon?.height}}</p>
+    </div>
+    <p *ngFor="let item of pokemon?.types">
+    {{"Type: "+item.type.name}}</p>
+</div>

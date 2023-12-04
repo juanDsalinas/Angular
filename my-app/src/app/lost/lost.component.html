@@ -1,0 +1,13 @@
+<div class="formis">
+    <form #lostForm="ngForm" (ngSubmit)="cambios(lostForm.value)">
+        <div>
+            <label>Please Enter Your Username</label><br>
+            <input type="text" name="User" required="required" placeholder="Enter the username" ngModel required #User="ngModel">
+            <div [hidden]="User.valid || User.pristine"><p>This field is required</p></div>
+        </div>
+        <button class="p-4  bg-green-500 text-black" [disabled]="lostForm.invalid">Validar</button>
+        <a href="/sign">Registrarse</a>
+    </form>
+</div>
+
+<div class="text-black">{{lostForm.value.User | json}}</div>

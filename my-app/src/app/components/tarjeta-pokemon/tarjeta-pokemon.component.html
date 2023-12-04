@@ -1,0 +1,12 @@
+<div id="container">
+    <!-- <img src="" alt="flecha" id="flecha"> -->
+    <!-- Enviamos el id cuando x pokemon sea clickeado hacia el Output-->
+    <div id="tarjeta" (click)="clickeado.emit(id)">
+        <div id="circulo"></div>
+        <!-- Del pokemon clickeado sacamos el ID para enviarlo a la foto-pokemons -->
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{id}}.png" alt="">
+        <span>No. {{id}}</span>
+        <span *ngIf="data">{{ data.name }}</span>
+        <span></span>
+    </div>
+</div>

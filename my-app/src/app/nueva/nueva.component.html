@@ -1,0 +1,13 @@
+<div class="formis">
+    <form #lostForm="ngForm" (ngSubmit)="passwor(lostForm.value)">
+        <div>
+            <label>Please Enter Your New Password</label><br>
+            <input type="password" name="password" required="required" placeholder="Enter the username" ngModel required #password="ngModel">
+            <div [hidden]="password.valid || password.pristine"><p>This field is required</p></div>
+        </div>
+        <button class="p-4  bg-green-500 text-black" [disabled]="lostForm.invalid">Validar</button>
+        <a href="/sign">Registrarse</a>
+    </form>
+</div>
+
+<div class="text-black">{{lostForm.value.User | json}}</div>

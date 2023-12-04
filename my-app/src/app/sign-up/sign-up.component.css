@@ -1,0 +1,85 @@
+body {
+  background-color:#FFD700;
+  height:100vh;
+}
+
+/* Estilos del segundo formulario */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .title {
+    padding:10px 0 0 0;
+    font-size:25px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:400px;
+    height:460px;
+    padding:35px 0 ;
+    background:#000;
+    margin-left:470px;
+    border-radius:5px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    color:#000;
+    width: 100%;
+    padding: 8px;
+    /* margin-bottom: 16px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    outline:none;
+    color:#000;
+  }
+  
+  div {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:10px;
+  }
+  
+  button:disabled {
+    background-color: #a0d468;
+    cursor: not-allowed;
+  }
+  
+  /* Estilos para el enlace de registro */
+  a {
+    text-decoration: none;
+    color: #3498db;
+    margin-top: 16px;
+  }
+  
+  a:hover {
+    color: #1a5276;
+  }
+  

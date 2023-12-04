@@ -1,0 +1,30 @@
+<body>
+    <div class="nav">
+        <!-- <img width=130px height="40px" src="" alt=""> -->
+        <ul>
+            <li><a class="fuego">PokeSena</a></li>
+            <!-- <li><a class="agua">Agua</a></li>  -->
+            <!-- <li><a class="tierra" href="/dashboard">Tierra</a></li> -->
+        </ul>
+        <a class="out" href="/"><img width="120px" height="120px" src="../../assets/pokout-removebg-preview.png" alt=""></a>
+    </div>
+
+    <!-- <h2 class="text-center pt-4 text-white text-4xl">Bienvenido Entrenador</h2> -->
+    <main id="container" #container>
+        <app-foto-pokemon
+        [pokemon]="pokemonSeleccionado"
+        ></app-foto-pokemon>
+
+        <div id="tarjerasContainer">
+            <h2 class="pokesena">Pokemones</h2>
+            <app-tarjeta-pokemon *ngFor="let pokemon of listaPokemon"
+            [data]="pokemon"
+            
+            (clickeado)="tarjeraClickeada($event)"
+            ></app-tarjeta-pokemon>
+            <!-- TarjetaClickeada recibe el evento que emite
+            el Output proveniente del hijo -->
+             </div>
+       
+    </main>
+</body>

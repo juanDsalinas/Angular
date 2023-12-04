@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title {
+    padding:40px 0 0 0;
+    font-size:25px;
+    text-align:center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* estilos del entorno del formulario */
+  .formis {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width:400px;
+    border-radius: 8px;
+    margin-top:50px;
+    margin-left:450px;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:#000;
+  }
+
+  input:focus {
+    outline:none;
+  }
+  
+  div {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #a0d468;
+    cursor: not-allowed;
+  }
+  
+  /* Estilos para el enlace de registro */
+  a {
+    text-decoration: none;
+    color: #3498db;
+    margin-top: 16px;
+  }
+  
+  a:hover {
+    color: #1a5276;
+  }
+  
